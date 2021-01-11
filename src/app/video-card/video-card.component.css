@@ -1,0 +1,53 @@
+.video_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 15px;
+  max-width: 320px;
+  min-height: 415px;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.5), 12px 12px 12px rgba(0, 0, 0, 0.5), inset 5px 5px 20px rgba(255,255,255,0.05);
+  background:white;
+  overflow: hidden;
+  position: relative;
+}
+.favorites_button {
+  width: 190px;
+  height: 28px;
+  border: #bebebe 2px solid;
+  color: #bebebe;
+  background-color: white;
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: -5px;
+  transition: all 0.05s ease;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 2px;
+}
+.favorites_button:hover {
+  transform: scale(1.02) translate(-49%, -49%);
+  cursor: pointer;
+  color: #494949;
+  border: #494949 2px solid;
+}
+.favorites_button_clicked {
+  width: 190px;
+  height: 28px;
+  border: #2593db 2px solid;
+  color: #2593db;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: -5px;
+  transition: all 0.05s ease;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 2px;
+}
+img {
+  height: 240px;
+}

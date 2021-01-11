@@ -1,0 +1,19 @@
+<div class="video_card">
+    <a [href]="videoUrl" class="image" target="_blank">
+      <img [src]="src" alt="">
+    </a>
+    <div class="content">
+      <a class="header" style="margin: 1em 0 1em 0;">{{videoTitle}}</a>
+      <div class="meta">
+          <span class="date" style="font-weight: bolder;">
+            <a href="{{href}}" target="_blank">{{videoChannelTitle}}</a>
+          </span>
+        <span class="ui right floated date" style="font-weight: bolder;">{{ videoPublishedAt | date:'mediumDate' }}</span>
+      </div>
+      <div class="description">
+        {{ videoDescription?.slice(0,50) }}...
+      </div>
+    </div>
+  <div class="favorites_button" (click)="addVideo(id)" *ngIf="!isFavorites && !favoritesService.checkFavorites(id)">ADD TO FAVORITES</div>
+  <div class="favorites_button_clicked" *ngIf="!isFavorites && favoritesService.checkFavorites(id)" >ADDED TO FAVORITES</div>
+</div>

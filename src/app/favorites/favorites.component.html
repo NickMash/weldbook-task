@@ -1,0 +1,7 @@
+<div *ngIf="favoritesService.favorite$ | async as favorites" class="favorites__container">
+  <div class="delete_favorites_button" (click)="clearMemory()">DELETE ALL FAVORITES</div>
+  <app-video-card *ngFor="let video of favorites"
+  [src]="video.thumbnail" [videoTitle]="video.title" [href]="video.channelUrl"
+  [videoChannelTitle]="video.channelTitle" [videoPublishedAt]="video.publishedAt" [videoDescription]="video.description"
+  [videoUrl]="video.videoUrl" [id]="video.videoId"></app-video-card>
+</div>

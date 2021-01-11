@@ -1,0 +1,20 @@
+<div class="search_line" [formGroup]="loginForm">
+  <div class="inset">
+    <div class="wrap">
+      <div class="search">
+        <input type="text" class="searchTerm" formControlName="searchRequest" placeholder="Search for a video..." (keyup.enter)="searchMethod()">
+        <button type="submit" class="searchButton" (click)="searchMethod()">
+          Search
+        </button>
+      </div>
+    </div>
+    <div>
+      <input type="text" formControlName="location" id="location" placeholder="Location" (keyup.enter)="searchMethod()">
+    </div>
+    <select formControlName="sorting" (change)="searchMethod()">
+      <option value="">Choose sorting type</option>
+      <option *ngFor="let sort of sorts" [ngValue]="sort">{{sort}}
+      </option>
+    </select>
+  </div>
+</div>

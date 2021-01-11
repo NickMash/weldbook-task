@@ -1,0 +1,51 @@
+.favorites__container {
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 220px auto;
+  position: relative;
+}
+.delete_favorites_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 30px;
+  border: #00b4cc 3px solid;
+  color: #00b4cc;
+  border-radius: 5px;
+  font-family: Calibri;
+  font-size: 119%;
+  text-decoration: none;
+  transition: all 0.05s ease;
+  opacity: 0.6;
+  position: absolute;
+  left: 0;
+  right: -5px;
+  margin: -23px auto;
+  z-index: 0;
+}
+.delete_favorites_button:hover {
+  cursor: pointer;
+  color: #00b4cc;
+  border: #00b4cc 3px solid;
+  transform: scale(1.01);
+  opacity: 1;
+  z-index: 0;
+}
+@media (max-width: 1417px) {
+  .favorites__container {
+    max-width: 1050px;
+  }
+}
+@media (max-width: 1067px) {
+  .favorites__container {
+    max-width: 700px;
+  }
+}
+@media (max-width: 717px) {
+  .favorites__container {
+    justify-content: center;
+  }
+}

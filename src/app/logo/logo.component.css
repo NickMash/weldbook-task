@@ -1,0 +1,12 @@
+.youtube_logo {
+  background-image: url("src/assets/images/youtube_logo.png");
+  background-size: cover;
+  width: 250px;
+  height: 56px;
+  margin: 20px auto 0 auto;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 0;
+}
