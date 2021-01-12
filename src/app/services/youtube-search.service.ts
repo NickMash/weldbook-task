@@ -11,7 +11,7 @@ import {Video} from '../models/search.interface';
 export class YoutubeSearchService {
 
   private API_URL = 'https://www.googleapis.com/youtube/v3/search';
-  private API_TOKEN = 'AIzaSyBw0uOJyj9DabrEhP5SI13xqHacdsOtce4';
+  private API_TOKEN = 'AIzaSyDbl8IbuSUnJykMnZ8v_upTN6WKHItltBE';
 
   inputTouched = false;
   loading = false;
